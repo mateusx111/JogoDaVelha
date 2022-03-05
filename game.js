@@ -1,8 +1,9 @@
 
 let board = ['', '', '', '', '', '', '', '', '']
 let playerTime = 0
-let symbols = ['o', 'x']
 let gameOver = false
+let symbols = ['o', 'x']
+
 
 let winStates = [
     [0, 1, 2],
@@ -36,7 +37,7 @@ function handleMove(position) {
 }
 
 function isWin() {
-
+   
     for (let i = 0; i < winStates.length; i++) {
         let seq = winStates[i];
 
